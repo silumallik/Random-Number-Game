@@ -37,20 +37,20 @@ class game {
             return;
         }
 
-        // 👉 STEP 1 — PURANA RESULT CLEAR (CARDS ME)
+        // STEP 1 — PURANA RESULT CLEAR (CARDS ME)
         document.querySelectorAll(".result-card").forEach(card => {
             if (card.resultSpan) {
                 card.resultSpan.textContent = "";
             }
         });
 
-        // 👉 STEP 2 — PURANA RESULT BOARD CLEAR
+        // STEP 2 — PURANA RESULT BOARD CLEAR
         document.querySelector(".result-box").innerHTML = "";
 
         // Convert Set to Array for Result Board
         let playersArray = Array.from(this.riskusers);
 
-        // 👉 STEP 3 — NAYA RESULT SHOW (CARDS ME)
+        // STEP 3 — NAYA RESULT SHOW (CARDS ME)
         this.riskusers.forEach((val) => {
             if (val.number === this.currentRandomNumber) {
                 val.resultSpan.textContent =
@@ -61,7 +61,7 @@ class game {
             }
         });
 
-        // 👉 STEP 4 — NAYA RESULT BOARD ENTRY
+        // STEP 4 — NAYA RESULT BOARD ENTRY
         addToResultBoard(this.currentRandomNumber, playersArray);
 
     }
@@ -277,5 +277,6 @@ function addToResultBoard(randomNumber, players) {
         });
 
 }
+
 
 
