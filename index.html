@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <h4>Luck Test</h4>
+        <h4>Time :- <span id="time">00:00</span></h4>
+    </div>
+
+    <div class="container">
+
+        <!-- Input Box -->
+        <div class="card">
+            <input id="name" placeholder="Enter Your Name" type="text">
+            <input id="amount" placeholder="Enter Your Amount" type="text">
+            <button id="createuser">Create</button>
+            <br>
+            <button id="deleteuser">Delete</button>
+        </div>
+
+        <div class="numberbox">
+            <p id="unique"></p>
+        </div>
+
+        <div class="result-box">
+            <h5>Result Board</h5>
+        </div>
+    </div>
+
+    <div id="feature-btn">
+        <button id="updatenumber">Update Number</button>
+        <button id="checkresult">Check Result</button>
+        <button id="restart">Restart</button>
+    </div>
+
+    <div class="userboards">
+        <!-- Result Box 1 -->
+        <!-- <div class="result-card">
+            <p>Name :- <span id="Name">Aman</span></p>
+            <p>Select :- <span id="Select">7</span></p>
+            <p>Result :- <span id="Result">Win</span></p>
+            <p>Amount :- <span id="amount">Win</span></p>
+
+            <div class="grid">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div></div>
+                <div>0</div>
+                <div></div>
+            </div>
+        </div> -->
+    </div>
+
+    <div id="gamedescription">
+        <p>Step 1: First, enter the player name and the amount of money you want to bet in the input box.</p>
+        <p>Step 2: A box will open in your name. In that box, you have to select a number. This number will be matched with the lucky number.</p>
+        <p>Step 3: After selecting the number, click the Update Number button. When you click this button, you will be added to the game round.</p>
+        <p>Step 4: Click the Check Result button. The results of all players will be shown in the result section.</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="scriptt.js"></script>
+</body>
+
+</html>
